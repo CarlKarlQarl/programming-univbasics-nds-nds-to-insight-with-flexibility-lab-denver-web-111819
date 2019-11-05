@@ -110,5 +110,5 @@ def studios_totals(nds)
 end
 
 
-pp directors_database
+#pp directors_database
 pp movies_with_directors_set(directors_database)
