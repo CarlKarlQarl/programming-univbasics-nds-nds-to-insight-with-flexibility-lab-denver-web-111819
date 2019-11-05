@@ -99,3 +99,4 @@ def studios_totals(nds)
 end
 
 
+pp directors_database
