@@ -89,13 +89,12 @@ def movies_with_directors_set(source)
   movie_array =[]
   
   source.length.times do |cycle_directors|
-    source[cycle_directors][:movies].length.times do |cycle_titles|
-      title_name_array = {}
-      title_name_array[:title] = source[cycle_directors][:movies][cycle_titles][:title]
-      title_name_array[:director_name] = source[cycle_directors][:name]
-      movie_array.push(title_name_array)
-    end
+    movie_array.push(movie_with_director_name(
+      source[cycle_directors][:name], 
+      source[cycle_directors][:movies]))
   end
+  
+
   return movie_array
 end
 
