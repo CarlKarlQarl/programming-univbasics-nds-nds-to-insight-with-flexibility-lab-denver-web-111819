@@ -90,7 +90,7 @@ def movies_with_directors_set(source)
       movie_array.push(source[cycle_directors][:movies][cycle_titles])
     end
   end
-  
+  return movie_array
 end
 
 # ----------------    End of Your Code Region --------------------
