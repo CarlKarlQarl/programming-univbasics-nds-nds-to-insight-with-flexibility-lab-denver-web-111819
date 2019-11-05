@@ -91,7 +91,8 @@ def movies_with_directors_set(source)
   source.length.times do |cycle_directors|
     movie_array.push(movie_with_director_name(
       source[cycle_directors][:name], 
-      source[cycle_directors][:movies]))
+      source[cycle_directors][:movies])
+    )
   end
   
 
