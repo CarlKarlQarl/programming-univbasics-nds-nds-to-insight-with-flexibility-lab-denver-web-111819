@@ -84,13 +84,7 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
   
-  movie_array = []
-  source.length.times do |cycle_directors|
-    source[cycle_directors][:movies].length.times do |cycle_titles|
-      movie_array.push(source[cycle_directors][:movies][cycle_titles])
-    end
-  end
-  return movie_array
+
 end
 
 # ----------------    End of Your Code Region --------------------
