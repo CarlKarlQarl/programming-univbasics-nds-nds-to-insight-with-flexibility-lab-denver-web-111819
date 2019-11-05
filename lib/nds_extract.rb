@@ -6,6 +6,8 @@ require 'pp'
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
 
+#Takes an array of arrays and flattens it into an array
+#Loops through each cell and then adds it to a new array to return
 def flatten_a_o_a(aoa)
   result = []
   i = 0
@@ -22,6 +24,7 @@ def flatten_a_o_a(aoa)
   result
 end
 
+#Constrcuts and returns a hash containing movie data and a director
 def movie_with_director_name(director_name, movie_data)
   { 
     :title => movie_data[:title],
