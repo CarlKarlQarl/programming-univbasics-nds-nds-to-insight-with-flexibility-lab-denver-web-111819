@@ -85,7 +85,11 @@ def gross_per_studio(collection)
   #{ :title => "Movie C", :studio => "Omega Films", :worldwide_gross => 30 }
   #]
   
+  studio_gross_hash = {}
   
+  collection.length.times do |index|
+    studio_gross_hash[collection[index][:studio]] = collection[index][:worldwide_gross]
+  end
   
 end
 
