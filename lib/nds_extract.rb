@@ -89,7 +89,7 @@ def gross_per_studio(collection)
   
   collection.length.times do |index|
     if !studio_gross_hash[collection[index][:studio]]
-      studio_gross_hash[collection[index][:studio]] += collection[index][:worldwide_gross]
+      studio_gross_hash[collection[index][:studio]] = collection[index][:worldwide_gross]
     else
       studio_gross_hash[collection[index][:studio]] += collection[index][:worldwide_gross]
     end
