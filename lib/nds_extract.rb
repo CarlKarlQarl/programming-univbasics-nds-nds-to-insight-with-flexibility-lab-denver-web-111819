@@ -144,13 +144,4 @@ def studios_totals(nds)
 end
 
 
-#pp directors_database
-#pp movies_with_directors_set(directors_database)
-
-  test_data = [
-  { :title => "Movie A", :studio => "Alpha Films", :worldwide_gross => 10 },
-  { :title => "Movie B", :studio => "Alpha Films", :worldwide_gross => 30 },
-  { :title => "Movie C", :studio => "Omega Films", :worldwide_gross => 30 }
-  ]
-  
-pp gross_per_studio(test_data)
+pp movies_with_directors_set(directors_database)
