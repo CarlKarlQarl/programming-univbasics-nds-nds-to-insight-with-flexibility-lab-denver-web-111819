@@ -58,7 +58,7 @@ def movies_with_director_key(name, movies_collection)
   #test_set = [{:title => "TestA"}, {:title => "TestB"}]
   
   movies_collection.length.times do |index|
-    movies_collection[index][:director_name] = dir_name
+    movies_collection[index][:director_name] = name
   end
   
   return movies_collection
