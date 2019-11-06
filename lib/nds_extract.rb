@@ -96,6 +96,8 @@ def movies_with_directors_set(source)
       temp_hash = {}
       temp_hash[:title] = source[cycle_directors][:movies][cycle_titles][:title]
       temp_hash[:director_name] = source[cycle_directors][:name]
+      temp_array.push(temp_hash)
+      movie_array.push(temp_array)
     end
   end
   
