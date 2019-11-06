@@ -88,13 +88,18 @@ def movies_with_directors_set(source)
   #...          [{:title => "Test2", :director_name => "B"}],
   #...          [{:title => "Test3", :director_name => "C"}]]
   
+  movie_array = []
+  
   source.length.times do |cycle_directors|
     source[cycle_directors][:movies].length.times do |cycle_titles|
-      
+      temp_array = []
+      temp_hash = {}
+      temp_hash[:title] = source[cycle_directors][:movies][cycle_titles][:title]
+      temp_hash[:director_name] = source[cycle_directors][:name]
     end
   end
   
-  
+  return movie_array
 
 end
 
