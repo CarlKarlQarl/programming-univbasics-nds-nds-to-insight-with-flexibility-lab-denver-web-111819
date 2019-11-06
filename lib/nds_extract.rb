@@ -122,10 +122,17 @@ def movies_with_directors_set(source)
     source[cycle_directors][:movies].length.times do |cycle_titles|
       temp_array = []
       temp_hash = {}
-      temp_hash[:title] = source[cycle_directors][:movies][cycle_titles][:title]
-      temp_hash[:director_name] = source[cycle_directors][:name]
+      
+      #temp_hash[:title] = source[cycle_directors][:movies][cycle_titles][:title]
+      #temp_hash[:director_name] = source[cycle_directors][:name]
+      
+      temp_hash = movie_with_director_name(source[cycle_directors][:name], source[cycle_directors][:movies][cycle_titles])
+      
       temp_array.push(temp_hash)
       movie_array.push(temp_array)
+      
+
+      
     end
   end
   
