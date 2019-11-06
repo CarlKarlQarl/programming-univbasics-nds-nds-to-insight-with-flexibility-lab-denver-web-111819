@@ -54,7 +54,6 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   
-  nil
 end
 
 
@@ -84,20 +83,7 @@ def movies_with_directors_set(source)
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
   
-  # becomes... [[{:title => "Test", :director_name => "A"}], ...[], ... []]
-  
-  movie_array =[]
-  
-  source.length.times do |cycle_directors|
-    source[cycle_directors][:movies].length.times do |cycle_titles|
-      movie_array.push(movie_with_director_name(
-        source[cycle_titles][:name], 
-        source[cycle_directors][:movies][cycle_titles]))
-    end
-  end
-  
 
-  return movie_array
 end
 
 # ----------------    End of Your Code Region --------------------
@@ -112,4 +98,3 @@ end
 
 
 #pp directors_database
-pp movies_with_directors_set(directors_database)
