@@ -88,6 +88,11 @@ def movies_with_directors_set(source)
   #...          [{:title => "Test2", :director_name => "B"}],
   #...          [{:title => "Test3", :director_name => "C"}]]
   
+  source.length.times do |cycle_directors|
+    source[cycle_directors][:movies].length.times do |cycle_titles|
+      
+    end
+  end
   
   
 
