@@ -57,6 +57,10 @@ def movies_with_director_key(name, movies_collection)
   #dir_name = "Byron Poodle"
   #test_set = [{:title => "TestA"}, {:title => "TestB"}]
   
+  movies_collection.length.times do |index|
+    movies_collection[index]
+  end
+  
   
   
 end
