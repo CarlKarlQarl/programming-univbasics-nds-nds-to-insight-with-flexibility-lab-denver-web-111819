@@ -24,7 +24,7 @@ def flatten_a_o_a(aoa)
   result
 end
 
-#Constrcuts and returns a hash containing movie data and a director
+#Constructs and returns a hash containing movie data and a director
 def movie_with_director_name(director_name, movie_data)
   { 
     :title => movie_data[:title],
